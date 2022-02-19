@@ -2,17 +2,31 @@ import 'extensions/string_extension.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-//Test case 4
-String testCase = "+--+....o..o....\n| o|............\n|  |......o.....\n|o +---+........\n|      |....+--+\n|  o   |....|oo|\n|      |....|oo|\n+------+..o.+--+\n................\n.....oo.........\n................\n+--------------+\n|          o   |\n|          o   |\n|              |\n+--------------+";
-  //Test case 3
+
+  // Test case 8, expected answer 74, my answer = 86
+  // String testCase = "oooooo+--+oooooo\no+--+o|oo|o+--+o\no|oo+-+oo+-+oo|o\no++oooooooooo++o\noo+-+o+--+o+-+oo\noooo|o|oo|o|oooo\no+--+o+--+o+--+o\n++oooooooooooo++\n|oooooooooooooo|\n+--------------+\noooooooooooooooo\no+-+oo+--+oo+-+o\n++o|oo|oo|oo|o++\n|oo+--+oo+--+oo|\n|oooooooooooooo|\n+--------------+";
+
+//Test case 7, expected answer = 20, my answer = 25
+// String testCase = "+--------------+\n|   o      oo  |\n| +----------+o|\n| |..........| |\n| |.+------+o|o|\n| |.|      |.| |\n| |o| +--+o|.| |\n| |.| |oo|o|.| |\n| |.| +--+ |.| |\n| |.|  oo  |.| |\n| |.|oooooo|.| |\n| |.+------+o|o|\n|o|..........| |\n|o+----------+ |\n|      o   o   |\n+--------------+";
+
+//Test case 6, my answer = expected answer
+// String testCase = "+--------------+\n|    o       o |\n+----------+  ++\n..........++ ++.\n....o....++ ++..\n........++ ++...\n.......++ ++....\n.oo...++o++...o.\n.....++ ++......\n....++ ++.......\n...++ ++....oo..\n..++ ++....o....\n.++ ++..........\n++o +----------+\n|       o      |\n+--------------+";
+
+//Test case 5, expected answer = 13, my answer = 15
+// String testCase = ".....o..........\n.+-------+..o.o.\n.|       |.oo...\n.|    o  |ooooo.\n.|       |oo....\n.|oo+-+oo+--+oo.\n.|  |.|     |o..\n.|  |.|     +-+.\n.|oo|o|       |.\n.|  |.|       |.\n.|  |.|ooo   o|.\n.|  |.|       |.\n.|  |.|  oo   |.\n.|  |.|       |.\n.+--+o+-------+.\n...............o";
+
+//Test case 4, expected answer = 9, my answer = 10
+// String testCase = "+--+....o..o....\n| o|............\n|  |......o.....\n|o +---+........\n|      |....+--+\n|  o   |....|oo|\n|      |....|oo|\n+------+..o.+--+\n................\n.....oo.........\n................\n+--------------+\n|          o   |\n|          o   |\n|              |\n+--------------+";
+
+//Test case 3, my answer = expected answer
   // String testCase = "................\n................\n.oo.+------+oooo\n.oo.|  o   |.oo.\noooo|oooooo|....\n....+--+ o |.oo.\n.......| o |....\n....oo.|o ++.oo.\n....oo.+--+o.oo.\n................\n......ooo.......\n................\n................\n................\n................\n................";
 
-  //Test case 2
+  //Test case 2, my answer = expected answer
 // String  testCase = "................\n................\n...+-------+.o..\n.o.|  o o  |..o.\n...|       |....\n...| o  +--+.oo.\n...|    |.......\n...+----+.......\n................\n........oo......\n................\n...o............\n................\n...........o....\n................\n................";
 
- //Test Case 1
-  // String testCase =
-  //     "................\n................\n..+----------+..\n..|          |..\n..|   o      |..\n..|      o   |..\n..|          |..\n..+----------+..\n................\n............o...\n.....o..........\n................\n.........o......\n................\n................\n................";
+ //Test Case 1, my answer = expected answer
+  String testCase =
+      "................\n................\n..+----------+..\n..|          |..\n..|   o      |..\n..|      o   |..\n..|          |..\n..+----------+..\n................\n............o...\n.....o..........\n................\n.........o......\n................\n................\n................";
   List<String> testCasesLines = testCase.split("\n");
   List<String> fences = ["|", "+", "-"];
   String mole = "o";
